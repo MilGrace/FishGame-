@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290731CD2993FD3800B4DA02 /* FishGame_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731CC2993FD3800B4DA02 /* FishGame_App.swift */; };
+		290731CF2993FD3800B4DA02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731CE2993FD3800B4DA02 /* ContentView.swift */; };
+		290731D12993FD3900B4DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290731D02993FD3900B4DA02 /* Assets.xcassets */; };
+		290731D42993FD3900B4DA02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290731D32993FD3900B4DA02 /* Preview Assets.xcassets */; };
+		290731DF2993FD3A00B4DA02 /* FishGame_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731DE2993FD3A00B4DA02 /* FishGame_Tests.swift */; };
+		290731E92993FD3A00B4DA02 /* FishGame_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731E82993FD3A00B4DA02 /* FishGame_UITests.swift */; };
+		290731EB2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731EA2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift */; };
+		29E0A070299EBB51001CCC1E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A06F299EBB51001CCC1E /* Network.swift */; };
+		29E0A073299FBF84001CCC1E /* FishClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A072299FBF84001CCC1E /* FishClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		290731DB2993FD3A00B4DA02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290731C12993FD3800B4DA02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290731C82993FD3800B4DA02;
+			remoteInfo = "FishGame!";
+		};
+		290731E52993FD3A00B4DA02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290731C12993FD3800B4DA02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290731C82993FD3800B4DA02;
+			remoteInfo = "FishGame!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		290731C92993FD3800B4DA02 /* FishGame!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FishGame!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		290731CC2993FD3800B4DA02 /* FishGame_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishGame_App.swift; sourceTree = "<group>"; };
+		290731CE2993FD3800B4DA02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		290731D02993FD3900B4DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		290731D32993FD3900B4DA02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		290731D52993FD3900B4DA02 /* FishGame_.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FishGame_.entitlements; sourceTree = "<group>"; };
+		290731DA2993FD3A00B4DA02 /* FishGame!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishGame!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		290731DE2993FD3A00B4DA02 /* FishGame_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishGame_Tests.swift; sourceTree = "<group>"; };
+		290731E42993FD3A00B4DA02 /* FishGame!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishGame!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		290731E82993FD3A00B4DA02 /* FishGame_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishGame_UITests.swift; sourceTree = "<group>"; };
+		290731EA2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishGame_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29E0A06F299EBB51001CCC1E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		29E0A071299EBEC6001CCC1E /* FishGame--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FishGame--Info.plist"; sourceTree = SOURCE_ROOT; };
+		29E0A072299FBF84001CCC1E /* FishClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishClass.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		290731C62993FD3800B4DA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731D72993FD3A00B4DA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731E12993FD3A00B4DA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290731C02993FD3800B4DA02 = {
+			isa = PBXGroup;
+			children = (
+				290731CB2993FD3800B4DA02 /* FishGame! */,
+				290731DD2993FD3A00B4DA02 /* FishGame!Tests */,
+				290731E72993FD3A00B4DA02 /* FishGame!UITests */,
+				290731CA2993FD3800B4DA02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		290731CA2993FD3800B4DA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				290731C92993FD3800B4DA02 /* FishGame!.app */,
+				290731DA2993FD3A00B4DA02 /* FishGame!Tests.xctest */,
+				290731E42993FD3A00B4DA02 /* FishGame!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290731CB2993FD3800B4DA02 /* FishGame! */ = {
+			isa = PBXGroup;
+			children = (
+				29E0A071299EBEC6001CCC1E /* FishGame--Info.plist */,
+				290731CC2993FD3800B4DA02 /* FishGame_App.swift */,
+				290731CE2993FD3800B4DA02 /* ContentView.swift */,
+				29E0A072299FBF84001CCC1E /* FishClass.swift */,
+				290731D02993FD3900B4DA02 /* Assets.xcassets */,
+				290731D52993FD3900B4DA02 /* FishGame_.entitlements */,
+				290731D22993FD3900B4DA02 /* Preview Content */,
+				29E0A06F299EBB51001CCC1E /* Network.swift */,
+			);
+			path = "FishGame!";
+			sourceTree = "<group>";
+		};
+		290731D22993FD3900B4DA02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				290731D32993FD3900B4DA02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		290731DD2993FD3A00B4DA02 /* FishGame!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				290731DE2993FD3A00B4DA02 /* FishGame_Tests.swift */,
+			);
+			path = "FishGame!Tests";
+			sourceTree = "<group>";
+		};
+		290731E72993FD3A00B4DA02 /* FishGame!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				290731E82993FD3A00B4DA02 /* FishGame_UITests.swift */,
+				290731EA2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift */,
+			);
+			path = "FishGame!UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		290731C82993FD3800B4DA02 /* FishGame! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290731EE2993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!" */;
+			buildPhases = (
+				290731C52993FD3800B4DA02 /* Sources */,
+				290731C62993FD3800B4DA02 /* Frameworks */,
+				290731C72993FD3800B4DA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FishGame!";
+			productName = "FishGame!";
+			productReference = 290731C92993FD3800B4DA02 /* FishGame!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		290731D92993FD3A00B4DA02 /* FishGame!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290731F12993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!Tests" */;
+			buildPhases = (
+				290731D62993FD3A00B4DA02 /* Sources */,
+				290731D72993FD3A00B4DA02 /* Frameworks */,
+				290731D82993FD3A00B4DA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290731DC2993FD3A00B4DA02 /* PBXTargetDependency */,
+			);
+			name = "FishGame!Tests";
+			productName = "FishGame!Tests";
+			productReference = 290731DA2993FD3A00B4DA02 /* FishGame!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		290731E32993FD3A00B4DA02 /* FishGame!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290731F42993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!UITests" */;
+			buildPhases = (
+				290731E02993FD3A00B4DA02 /* Sources */,
+				290731E12993FD3A00B4DA02 /* Frameworks */,
+				290731E22993FD3A00B4DA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290731E62993FD3A00B4DA02 /* PBXTargetDependency */,
+			);
+			name = "FishGame!UITests";
+			productName = "FishGame!UITests";
+			productReference = 290731E42993FD3A00B4DA02 /* FishGame!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		290731C12993FD3800B4DA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					290731C82993FD3800B4DA02 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					290731D92993FD3A00B4DA02 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 290731C82993FD3800B4DA02;
+					};
+					290731E32993FD3A00B4DA02 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 290731C82993FD3800B4DA02;
+					};
+				};
+			};
+			buildConfigurationList = 290731C42993FD3800B4DA02 /* Build configuration list for PBXProject "FishGame!" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 290731C02993FD3800B4DA02;
+			productRefGroup = 290731CA2993FD3800B4DA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				290731C82993FD3800B4DA02 /* FishGame! */,
+				290731D92993FD3A00B4DA02 /* FishGame!Tests */,
+				290731E32993FD3A00B4DA02 /* FishGame!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		290731C72993FD3800B4DA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290731D42993FD3900B4DA02 /* Preview Assets.xcassets in Resources */,
+				290731D12993FD3900B4DA02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731D82993FD3A00B4DA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731E22993FD3A00B4DA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		290731C52993FD3800B4DA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290731CF2993FD3800B4DA02 /* ContentView.swift in Sources */,
+				290731CD2993FD3800B4DA02 /* FishGame_App.swift in Sources */,
+				29E0A073299FBF84001CCC1E /* FishClass.swift in Sources */,
+				29E0A070299EBB51001CCC1E /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731D62993FD3A00B4DA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290731DF2993FD3A00B4DA02 /* FishGame_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290731E02993FD3A00B4DA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290731EB2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift in Sources */,
+				290731E92993FD3A00B4DA02 /* FishGame_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		290731DC2993FD3A00B4DA02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290731C82993FD3800B4DA02 /* FishGame! */;
+			targetProxy = 290731DB2993FD3A00B4DA02 /* PBXContainerItemProxy */;
+		};
+		290731E62993FD3A00B4DA02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290731C82993FD3800B4DA02 /* FishGame! */;
+			targetProxy = 290731E52993FD3A00B4DA02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		290731EC2993FD3A00B4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		290731ED2993FD3A00B4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		290731EF2993FD3A00B4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FishGame!/FishGame_.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FishGame!/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FishGame--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		290731F02993FD3A00B4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FishGame!/FishGame_.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FishGame!/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FishGame--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		290731F22993FD3A00B4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishGame!.app/Contents/MacOS/FishGame!";
+			};
+			name = Debug;
+		};
+		290731F32993FD3A00B4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishGame!.app/Contents/MacOS/FishGame!";
+			};
+			name = Release;
+		};
+		290731F52993FD3A00B4DA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FishGame!";
+			};
+			name = Debug;
+		};
+		290731F62993FD3A00B4DA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ver.FishGame-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "FishGame!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		290731C42993FD3800B4DA02 /* Build configuration list for PBXProject "FishGame!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290731EC2993FD3A00B4DA02 /* Debug */,
+				290731ED2993FD3A00B4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290731EE2993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290731EF2993FD3A00B4DA02 /* Debug */,
+				290731F02993FD3A00B4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290731F12993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290731F22993FD3A00B4DA02 /* Debug */,
+				290731F32993FD3A00B4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290731F42993FD3A00B4DA02 /* Build configuration list for PBXNativeTarget "FishGame!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290731F52993FD3A00B4DA02 /* Debug */,
+				290731F62993FD3A00B4DA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 290731C12993FD3800B4DA02 /* Project object */;
+}
