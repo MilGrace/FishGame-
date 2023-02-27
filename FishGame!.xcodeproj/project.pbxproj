@@ -16,6 +16,7 @@
 		290731EB2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290731EA2993FD3A00B4DA02 /* FishGame_UITestsLaunchTests.swift */; };
 		29E0A070299EBB51001CCC1E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A06F299EBB51001CCC1E /* Network.swift */; };
 		29E0A073299FBF84001CCC1E /* FishClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A072299FBF84001CCC1E /* FishClass.swift */; };
+		29E0A07729AD134A001CCC1E /* PlaceholderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A07629AD134A001CCC1E /* PlaceholderClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		29E0A06F299EBB51001CCC1E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		29E0A071299EBEC6001CCC1E /* FishGame--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FishGame--Info.plist"; sourceTree = SOURCE_ROOT; };
 		29E0A072299FBF84001CCC1E /* FishClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishClass.swift; sourceTree = "<group>"; };
+		29E0A07629AD134A001CCC1E /* PlaceholderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				29E0A071299EBEC6001CCC1E /* FishGame--Info.plist */,
 				290731CC2993FD3800B4DA02 /* FishGame_App.swift */,
 				290731CE2993FD3800B4DA02 /* ContentView.swift */,
+				29E0A07629AD134A001CCC1E /* PlaceholderClass.swift */,
 				29E0A072299FBF84001CCC1E /* FishClass.swift */,
 				290731D02993FD3900B4DA02 /* Assets.xcassets */,
 				290731D52993FD3900B4DA02 /* FishGame_.entitlements */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E0A07729AD134A001CCC1E /* PlaceholderClass.swift in Sources */,
 				290731CF2993FD3800B4DA02 /* ContentView.swift in Sources */,
 				290731CD2993FD3800B4DA02 /* FishGame_App.swift in Sources */,
 				29E0A073299FBF84001CCC1E /* FishClass.swift in Sources */,
