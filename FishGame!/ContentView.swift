@@ -72,10 +72,19 @@ struct ContentView: View {
                              let fishName = fish["Species Name"] as? String ??
                              "Angelfish"
                              
-                             let fishImage1 = fish["Image Gallery"] as? Array<Any>//[[String:Any]]
-                             var fishImage2 = fishImage1?.first
+                             let fishImage1 = fish["Image Gallery"] as? [[String: Any]]//[[String:Any]]
                              
-                             let fish = Fish(name: fishName as? String ?? "", imageString: fishImage2 as? AnyObject ?? Placeholder())
+                             let imageDictionary = fishImage1?.first
+                             let fishImageURL: String? = imageDictionary?["src"] as? String
+//                             if let fishDictionaries = fishImage1, let fish1 = fishDictionaries.first
+//                             {
+//
+//                             }
+                             
+                             
+                             
+                             
+                             let fish = Fish(name: fishName as? String ?? "", imageString: fishImageURL ?? "")
                              fishNames.append(fish)
                              
                              

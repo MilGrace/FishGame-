@@ -11,15 +11,15 @@ import SwiftUI
 class Fish
 {
     var name: String
-    var imageString: AnyObject
+    var imageString: String
     
     init()
     {
         self.name = "whale"
-        self.imageString = Placeholder()
+        self.imageString = "Placeholder"
     }
     
-    init(name: String, imageString: AnyObject)
+    init(name: String, imageString: String)
     {
         self.name = name
         self.imageString = imageString
