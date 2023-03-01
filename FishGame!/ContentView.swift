@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CustomColor {
     static let mellowPink = Color("mellowPink")
@@ -14,36 +15,52 @@ struct CustomColor {
 struct ContentView: View {
  
     
-    
+    @State var fishImageURL = ""
     @State var fishNames = [Fish] ()
     @State var randomFish: Fish = Fish()
-    
+    @State var fishName = ""
     
     var body: some View {
-        HStack {
+        
+        
+        ZStack {
             
+                
+            
+                      
+                       
             Image("bunnyfish-1")
                 .position(x: 180, y: 300)
             Image("rod")
-                .position(x:-0, y: 255)
+                .position(x:275, y: 255)
             Button("Catch Fish")
             {
                 getRandomFish()
-                print(randomFish.name)
-                print(randomFish.imageString)
+                displayFishImage(fish: randomFish)
+                //print(randomFish.name)
+                //print(randomFish.imageString)
             }
             
             .frame(width: 180, height: 50)
             .background(CustomColor.mellowPink)
             .cornerRadius(25)
-            .position(x:-160, y: 80)
+            .position(x:370, y: 80)
             .buttonStyle(.borderless)
             .font(Font.custom("", size: 30))
-            
-            
+            WebImage(url: URL(string: fishImageURL))
+                       .resizable()
+                       .frame(width: 280, height: 200)
+                       .aspectRatio(contentMode: .fit)
+         
+            Text("You caught a \(fishName)")
+                .font(.title)
+                .position(x:390,y:370)
+                .foregroundColor(CustomColor.mellowPink)
+                
             
             
         }
+        .background(Image("bunnyfishmeadow"))
         
         .frame(width: 800, height: 500)
         .onAppear(perform: getFishNames)
@@ -118,13 +135,19 @@ struct ContentView: View {
         randomFish = fishNames.randomElement() ?? Fish()
         
     }
+    func displayFishImage(fish: Fish)
+    {
+        fishImageURL = fish.imageString
+        print(fishImageURL)
+        fishName = fish.name
+    }
 
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .background(Image("bunnyfishmeadow"))
+            
             
             
         

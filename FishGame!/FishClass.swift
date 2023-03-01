@@ -16,7 +16,7 @@ class Fish
     init()
     {
         self.name = "whale"
-        self.imageString = "Placeholder"
+        self.imageString = "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/black-sea-bass-noaa-john-rosendale-sized.png"
     }
     
     init(name: String, imageString: String)

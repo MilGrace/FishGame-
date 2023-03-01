@@ -17,6 +17,7 @@
 		29E0A070299EBB51001CCC1E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A06F299EBB51001CCC1E /* Network.swift */; };
 		29E0A073299FBF84001CCC1E /* FishClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A072299FBF84001CCC1E /* FishClass.swift */; };
 		29E0A07729AD134A001CCC1E /* PlaceholderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A07629AD134A001CCC1E /* PlaceholderClass.swift */; };
+		29E0A07A29AE5DC1001CCC1E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 29E0A07929AE5DC1001CCC1E /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E0A07A29AE5DC1001CCC1E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +158,9 @@
 			dependencies = (
 			);
 			name = "FishGame!";
+			packageProductDependencies = (
+				29E0A07929AE5DC1001CCC1E /* SDWebImageSwiftUI */,
+			);
 			productName = "FishGame!";
 			productReference = 290731C92993FD3800B4DA02 /* FishGame!.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 290731C02993FD3800B4DA02;
+			packageReferences = (
+				29E0A07829AE5DC0001CCC1E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 290731CA2993FD3800B4DA02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -586,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29E0A07829AE5DC0001CCC1E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29E0A07929AE5DC1001CCC1E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E0A07829AE5DC0001CCC1E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 290731C12993FD3800B4DA02 /* Project object */;
 }
