@@ -57,7 +57,7 @@ struct ContentView: View {
                 if ifFirstLetterVowel(fishName: fishName)
                 {
                     Text("You caught an \(fishName)")
-                        .frame(minWidth: 200, idealWidth: 300, maxWidth: 500, minHeight: 40, idealHeight: 40, maxHeight: 50, alignment: .center)
+                        .padding()
                         .background(Color.white)
                         .font(.title)
                         .position(x:390,y:370)
@@ -66,7 +66,8 @@ struct ContentView: View {
                 else
                 {
                     Text("You caught a \(fishName)")
-                        .frame(minWidth: 200, idealWidth: 300, maxWidth: 500, minHeight: 40, idealHeight: 40, maxHeight: 50, alignment: .center)
+//                        .frame(minWidth: 200, idealWidth: 300, maxWidth: 500, minHeight: 40, idealHeight: 40, maxHeight: 50, alignment: .center)
+                        .padding()
                         .background(Color.white)
                         .font(.title)
                         .position(x:390,y:370)
