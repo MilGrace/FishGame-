@@ -19,7 +19,7 @@ struct ContentView: View {
     @State var fishNames = [Fish] ()
     @State var randomFish: Fish = Fish()
     @State var fishName = ""
-    
+    @State var showText = false
     var body: some View {
         
         
@@ -37,6 +37,7 @@ struct ContentView: View {
             {
                 getRandomFish()
                 displayFishImage(fish: randomFish)
+                showText = true
                 //print(randomFish.name)
                 //print(randomFish.imageString)
             }
@@ -52,10 +53,30 @@ struct ContentView: View {
                        .frame(width: 280, height: 200)
                        .aspectRatio(contentMode: .fit)
          
-            Text("You caught a \(fishName)")
-                .font(.title)
-                .position(x:390,y:370)
-                .foregroundColor(CustomColor.mellowPink)
+            if showText{
+                if ifFirstLetterVowel(fishName: fishName)
+                {
+                    Text("You caught an \(fishName)")
+                        .frame(minWidth: 200, idealWidth: 300, maxWidth: 500, minHeight: 40, idealHeight: 40, maxHeight: 50, alignment: .center)
+                        .background(Color.white)
+                        .font(.title)
+                        .position(x:390,y:370)
+                        .foregroundColor(CustomColor.mellowPink)
+                }
+                else
+                {
+                    Text("You caught a \(fishName)")
+                        .frame(minWidth: 200, idealWidth: 300, maxWidth: 500, minHeight: 40, idealHeight: 40, maxHeight: 50, alignment: .center)
+                        .background(Color.white)
+                        .font(.title)
+                        .position(x:390,y:370)
+                        .foregroundColor(CustomColor.mellowPink)
+                }
+                    
+                
+                
+            }
+            
                 
             
             
@@ -142,6 +163,19 @@ struct ContentView: View {
         fishName = fish.name
     }
 
+    func ifFirstLetterVowel(fishName: String)-> Bool
+    {
+        let fishFirstLetter = fishName.prefix(1)
+        let vowels = ["A","E","U","I","O"]
+        for vowel in vowels {
+            if vowel == fishFirstLetter
+            {
+                return true
+            }
+        }
+        
+        return false
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
